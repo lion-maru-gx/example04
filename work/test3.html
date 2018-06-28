@@ -1,0 +1,63 @@
+<html>
+<body>
+<svg width="300" height="300">
+	<symbol id="op1">
+		<rect x="5" y="5" width="20" height="20" fill="none" stroke="black"/>
+		<text x="12" y="17" font-size="10" >1</text>
+		<line x1="15" y1="0" x2="15" y2="5" stroke="black"/>
+		<line x1="15" y1="0" x2="30" y2="0" stroke="black"/>
+		<line x1="30" y1="0" x2="30" y2="30" stroke="black"/>
+		<line x1="15" y1="30" x2="30" y2="30" stroke="black"/>
+		<line x1="15" y1="25" x2="15" y2="35" stroke="black"/>
+	</symbol>
+	<symbol id="op2">
+		<rect x="5" y="5" width="20" height="20" fill="none" stroke="black"/>
+		<text x="12" y="17" font-size="10" >2</text>
+		<line x1="15" y1="25" x2="15" y2="35" stroke="black"/>
+	</symbol>
+	<symbol id="op3">
+		<rect x="5" y="5" width="20" height="20" fill="none" stroke="black"/>
+		<text x="12" y="17" font-size="10" >3</text>
+		<line x1="15" y1="0" x2="15" y2="5" stroke="black"/>
+		<line x1="15" y1="0" x2="30" y2="0" stroke="black"/>
+		<line x1="30" y1="0" x2="30" y2="30" stroke="black"/>
+		<line x1="15" y1="30" x2="30" y2="30" stroke="black"/>
+		<line x1="15" y1="25" x2="15" y2="35" stroke="black"/>
+	</symbol>
+	<symbol id="op4">
+		<rect x="5" y="5" width="20" height="20" fill="none" stroke="black"/>
+		<text x="12" y="17" font-size="10" >4</text>
+		<line x1="15" y1="25" x2="15" y2="35" stroke="black"/>
+	</symbol>
+	
+	<symbol id="alg1">
+		<use xlink:href="#op1" x="0" y="0"/>
+		<use xlink:href="#op2" x="40" y="0"/>
+		<use xlink:href="#op3" x="0" y="40"/>
+		<use xlink:href="#op4" x="40" y="40"/>
+	</symbol>
+	
+	<symbol id="alg2">
+		<use xlink:href="#op1" x="10" y="40"/>
+		<use xlink:href="#op2" x="40" y="40"/>
+		<use xlink:href="#op3" x="70" y="40"/>
+		<use xlink:href="#op4" x="100" y="40"/>
+	</symbol>
+	
+	<symbol id="alg3">
+		<use xlink:href="#op1" x="50" y="10"/>
+		<use xlink:href="#op2" x="50" y="40"/>
+		<use xlink:href="#op3" x="50" y="70"/>
+		<use xlink:href="#op4" x="50" y="100"/>
+	</symbol>
+	
+	<rect x="0" y="0" width="140" height="140" fill="none" stroke="black"/>
+	<use xlink:href="#alg1" x="0" y="0"/>
+	<rect x="140" y="0" width="140" height="140" fill="none" stroke="black"/>
+	<use xlink:href="#alg2" x="140" y="0"/>
+	<rect x="0" y="140" width="140" height="140" fill="none" stroke="black"/>
+	<use xlink:href="#alg3" x="0" y="140"/>
+	
+</svg>
+</body>
+</html>
